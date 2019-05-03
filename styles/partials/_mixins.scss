@@ -1,0 +1,17 @@
+@mixin header($font-size, $letter-spacing, $line-height) {
+    font-family: 'Dokdo', cursive;
+    letter-spacing: $letter-spacing;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: #ffc600;
+}
+
+@mixin nav {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 1px;
+    color: #ffc600;
+    text-transform: uppercase;
+}
