@@ -14,29 +14,6 @@ Charcoal: #262725;
 Camo Green: #1e140e;
 Ice Blue: #fafffe;
 Mud Green: #555f02;
-
-	** ICONS ** 
-Icons (From Font Awesome): 
-Home:
-https://fontawesome.com/icons/home?style=solid
-
-<i class="fas fa-home"></i>
-
-Users:
-https://fontawesome.com/icons/users?style=solid
-
-<i class="fas fa-users"></i>
-
-File:
-https://fontawesome.com/icons/file?style=solid
-
-<i class="fas fa-file"></i>
-
-Phone:
-https://fontawesome.com/icons/phone?style=solid
-
-<i class="fas fa-phone"></i>
-
 */
 
 @import "partials/_setup.scss";
@@ -112,6 +89,12 @@ header {
 			padding: 0 5px;
 		}
 	}
+}
+
+.header-nav a:hover {
+	color: #ffc600;
+	transition: 0.4s all ease;
+	letter-spacing: 2px;
 }
 
 .header-main {
@@ -243,7 +226,7 @@ header {
 	position: relative;
 	.left {
 		display: flex;
-		width: 40%;
+		width: 42%;
 		display: flex;
 		flex-direction: column;
 		margin-top: -50px;
@@ -253,8 +236,9 @@ header {
 	}
 	.right {
 		display: flex;
-		width: 40%;
+		width: 42%;
 		flex-direction: column;
+		margin-bottom: -50px;
 		img {
 			box-shadow: -23px 23px 0px 3px rgba(255,198,0,1);
 		}
@@ -263,8 +247,7 @@ header {
 
 .left-text {
 	text-align: right;
-	margin-left: 20%;
-	margin-top: 30px;
+	margin: 30px 0 0 20%;
 	h2 {
 		@include header(45px, 4.9px, 58px)
 		margin-bottom: 25px;
@@ -273,6 +256,7 @@ header {
 		text-align: left;
 		width: 90%;
 		@include p-text;
+		padding-bottom: 2%;
 	}
 }
 
@@ -283,6 +267,7 @@ header {
 	}
 	p {
 		@include p-text;
+		padding-bottom: 2%;
 	}
 }
 
@@ -290,4 +275,41 @@ header {
     /******************
 		S E C T I O N
 			F I V E
-    *******************/
+	*******************/
+
+
+.free-trials {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10%;
+	h2 {
+		@include header(45px, 4.9px, 58px);
+		margin-bottom: 0;
+	}
+	p {
+		@include p-text;
+		margin-top: 10px;
+	}
+	.button {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+    /******************
+		F O O T E R
+	*******************/
+	
+footer {
+	text-align: center;
+	p {
+		@include p-text;
+		margin: 0;
+		padding: 5px 0;
+		a {
+			color: #fafffe;
+		}
+	}
+}
