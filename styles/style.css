@@ -161,6 +161,88 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0);
   overflow: hidden; }
 
+/**************
+        B L O G 
+    ***************/
+header.blog {
+  background-image: url(../assets/blog-image-1.jpg);
+  height: 94vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #1e140e; }
+
+.blog-main {
+  position: relative;
+  width: 55%;
+  top: -250px; }
+  .blog-main h2 {
+    font-family: 'Dokdo', cursive;
+    letter-spacing: 10.9px;
+    font-size: 105px;
+    line-height: 69.6px;
+    color: #ffc600;
+    margin: 0 0 5% 20%; }
+  .blog-main img {
+    -webkit-box-shadow: 18px 18px 0px 3px #555f02;
+    box-shadow: 18px 18px 0px 3px #555f02;
+    width: 97.7%; }
+
+.blog-main-text {
+  padding: 10% 5% 3% 20%;
+  border-right: 4px solid #555F02;
+  border-bottom: 4px solid #555F02; }
+  .blog-main-text h3 {
+    margin: 0;
+    font-family: 'Dokdo', cursive;
+    letter-spacing: 4.3px;
+    font-size: 40px;
+    line-height: 58px;
+    color: #ffc600; }
+  .blog-main-text p.date {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    line-height: 32px;
+    color: #fafffe;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-style: italic; }
+    .blog-main-text p.date span {
+      font-weight: 700; }
+  .blog-main-text p {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    line-height: 32px;
+    color: #fafffe; }
+
+main {
+  position: relative; }
+  main .blog-right {
+    position: absolute;
+    top: 110px;
+    right: 0;
+    width: 20%; }
+    main .blog-right .blog-image {
+      text-align: right;
+      width: 105%;
+      position: relative;
+      right: 0;
+      left: -5%; }
+    main .blog-right img {
+      -webkit-box-shadow: -11px 21px 0px 11px #555f02;
+      box-shadow: -11px 21px 0px 11px #555f02;
+      width: 94%; }
+
+.blog-right-text {
+  background-color: #555F02;
+  width: 106%;
+  position: relative;
+  left: -5.5%;
+  padding: 5%; }
+  .blog-right-text h5 {
+    margin: 0; }
+
 html {
   font-size: 125%; }
 
@@ -189,7 +271,7 @@ a {
 /******************
         H E A D E R   
     *******************/
-header {
+header.index {
   background-image: url(../assets/home-image-1.jpg);
   height: 94vh;
   background-size: cover;

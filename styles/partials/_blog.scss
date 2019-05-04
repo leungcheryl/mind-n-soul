@@ -1,0 +1,80 @@
+    /**************
+        B L O G 
+    ***************/
+
+header.blog {
+    background-image: url(../assets/blog-image-1.jpg);
+	height: 94vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #1e140e;	
+}
+
+
+.blog-main {
+    position: relative;
+    width: 55%;
+    top: -250px;
+    h2 {
+        @include header(105px, 10.9px, 69.6px);
+        margin: 0 0 5% 20%;
+    }
+    img {
+        box-shadow: 18px 18px 0px 3px rgba(85,95,2,1);
+        width: 97.7%;
+    }
+}
+
+.blog-main-text {
+    padding: 10% 5% 3% 20%;
+    border-right: 4px solid #555F02;
+    border-bottom: 4px solid #555F02;
+    h3 {
+        margin: 0;
+        @include header(40px, 4.3px, 58px);
+    }
+    p.date {
+        @include p-text;
+        font-weight: 300;
+        letter-spacing: 1px;
+        font-style: italic;
+        span {
+            font-weight: 700;
+        }
+    }
+    p {
+        @include p-text;
+    }
+}
+
+main {
+    position: relative;
+    .blog-right {
+        position: absolute;
+        top: 110px;
+        right: 0;
+        width: 20%;
+        .blog-image {
+            text-align: right;
+            width: 105%;
+            position: relative;
+            right: 0;
+            left: -5%;
+        }
+        img {
+            box-shadow: -11px 21px 0px 11px  rgba(85,95,2,1);
+            width: 94%;
+        }
+    }
+}
+
+.blog-right-text {
+    background-color: #555F02;
+    width: 106%;
+    position: relative;
+    left: -5.5%;
+    padding: 5%;
+    h5 {
+        margin: 0;
+    }
+}

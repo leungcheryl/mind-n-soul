@@ -18,6 +18,8 @@ Mud Green: #555f02;
 
 @import "partials/_setup.scss";
 @import "partials/_mixins.scss";
+@import "partials/_blog.scss";
+@import "partials/_contact.scss";
 
 html {
 	font-size: 125%;
@@ -55,7 +57,7 @@ a {
         H E A D E R   
     *******************/
 
-header {
+header.index {
     background-image: url(../assets/home-image-1.jpg);
 	height: 94vh;
 	background-size: cover;
@@ -301,7 +303,7 @@ header {
     /******************
 		F O O T E R
 	*******************/
-	
+
 footer {
 	text-align: center;
 	p {
