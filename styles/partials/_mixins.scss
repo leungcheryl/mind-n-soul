@@ -15,3 +15,19 @@
     color: #fafffe;
     text-transform: uppercase;
 }
+
+@mixin p-text {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    line-height: 32px;
+    color: #fafffe;
+}
+
+@mixin button {
+    font-size: 35px;
+    color: #fafffe;
+    padding: 1% 2%;
+    background-color: #555f02;
+    font-family: 'Dokdo', cursive;
+}

@@ -66,6 +66,14 @@ a {
 	width: 80%;
 }
 
+.camo-green {
+	background-color: #1e140e;
+}
+
+.charcoal {
+	background-color: #262725;
+}
+
     /******************
         H E A D E R   
     *******************/
@@ -75,8 +83,7 @@ header {
 	height: 94vh;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-color: #1e140e;
-	
+	background-color: #1e140e;	
 }
 
 .header-container {
@@ -134,10 +141,12 @@ header {
 		@include header(115px, 1, 0.65);
 	}
 }
-
+    /******************
+		S E C T I O N
+			O N E 
+    *******************/
 .new-adventure {
-	background-color: #1e140e;
-	padding: 250px 0 150px;
+	padding: 200px 0 150px;
 	.new-adventure-container {
 		display: flex;
 		justify-content: space-between;
@@ -145,10 +154,140 @@ header {
 }
 
 .new-adventure-text {
-	width: 60%;
+	width: 65%;
+	h3 {
+		@include header(45px, 4.9px, 58px);
+		margin: 0 0 20px;
+	}
+	p {
+		@include p-text;
+	}
+}
+
+.button a {
+	@include button;
 }
 
 .new-adventure-image {
 	width: 25%;
+	height: 25%;
 	box-shadow: -23px 24px 0px 3px rgba(85,95,2,1);
 }
+
+    /******************
+		S E C T I O N
+			T W O
+    *******************/
+
+.gallery-container {
+	display: flex;
+	padding: 10% 0;
+	img {
+		width: 33.33%;
+		margin: 0 20px;
+	}
+}
+
+
+    /******************
+		S E C T I O N
+		T H R E E 
+    *******************/
+
+.wrapper.feature {
+	display: flex;
+	padding: 5% 0;
+}
+.features-container{
+	width: 50%;
+	.features {
+		display: flex;
+		padding: 3% 0;
+		i {
+			background-color: #555f02;
+			color: #fafffe;
+			padding: 10px;
+			height: 45px;
+			width: 45px;
+			border-radius: 50%;
+			vertical-align: middle;
+			text-align: center;
+			line-height: 25px;
+			font-size: 22px;
+		}
+	}
+}
+
+.features-text {
+	width: 90%;
+	padding-left: 3%;
+	h4 {
+		@include header(40px, 4.3px, 45px)
+		margin: 0;
+	}
+	p {
+		@include p-text;
+	}
+}
+
+    /******************
+		S E C T I O N
+			F O U R
+    *******************/
+
+
+
+.program-location-container {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	.left {
+		display: flex;
+		width: 40%;
+		display: flex;
+		flex-direction: column;
+		margin-top: -50px;
+		img {
+			box-shadow: 23px 23px 0px 3px rgba(255,198,0,1);
+		}
+	}
+	.right {
+		display: flex;
+		width: 40%;
+		flex-direction: column;
+		img {
+			box-shadow: -23px 23px 0px 3px rgba(255,198,0,1);
+		}
+	}
+}
+
+.left-text {
+	text-align: right;
+	margin-left: 20%;
+	margin-top: 30px;
+	h2 {
+		@include header(45px, 4.9px, 58px)
+		margin-bottom: 25px;
+	}
+	p {
+		text-align: left;
+		width: 90%;
+		@include p-text;
+	}
+}
+
+.right-text {
+	margin: 0 20% 10% 0;
+	h2 {
+		@include header(45px, 4.9px, 58px);
+	}
+	p {
+		@include p-text;
+	}
+}
+
+
+    /******************
+		S E C T I O N
+			F I V E
+    *******************/

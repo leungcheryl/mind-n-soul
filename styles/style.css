@@ -203,6 +203,12 @@ a {
   margin: 0 auto;
   width: 80%; }
 
+.camo-green {
+  background-color: #1e140e; }
+
+.charcoal {
+  background-color: #262725; }
+
 /******************
         H E A D E R   
     *******************/
@@ -283,9 +289,12 @@ header {
       font-weight: 400;
       line-height: 0.5; }
 
+/******************
+		S E C T I O N
+			O N E 
+    *******************/
 .new-adventure {
-  background-color: #1e140e;
-  padding: 250px 0 150px; }
+  padding: 200px 0 150px; }
   .new-adventure .new-adventure-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -295,9 +304,168 @@ header {
     justify-content: space-between; }
 
 .new-adventure-text {
-  width: 60%; }
+  width: 65%; }
+  .new-adventure-text h3 {
+    font-family: 'Dokdo', cursive;
+    letter-spacing: 4.9px;
+    font-size: 45px;
+    line-height: 58px;
+    color: #ffc600;
+    margin: 0 0 20px; }
+  .new-adventure-text p {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    line-height: 32px;
+    color: #fafffe; }
+
+.button a {
+  font-size: 35px;
+  color: #fafffe;
+  padding: 1% 2%;
+  background-color: #555f02;
+  font-family: 'Dokdo', cursive; }
 
 .new-adventure-image {
   width: 25%;
+  height: 25%;
   -webkit-box-shadow: -23px 24px 0px 3px #555f02;
   box-shadow: -23px 24px 0px 3px #555f02; }
+
+/******************
+		S E C T I O N
+			T W O
+    *******************/
+.gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10% 0; }
+  .gallery-container img {
+    width: 33.33%;
+    margin: 0 20px; }
+
+/******************
+		S E C T I O N
+		T H R E E 
+    *******************/
+.wrapper.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5% 0; }
+
+.features-container {
+  width: 50%; }
+  .features-container .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 3% 0; }
+    .features-container .features i {
+      background-color: #555f02;
+      color: #fafffe;
+      padding: 10px;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      vertical-align: middle;
+      text-align: center;
+      line-height: 25px;
+      font-size: 22px; }
+
+.features-text {
+  width: 90%;
+  padding-left: 3%; }
+  .features-text h4 {
+    font-family: 'Dokdo', cursive;
+    letter-spacing: 4.3px;
+    font-size: 40px;
+    line-height: 45px;
+    color: #ffc600;
+    margin: 0; }
+  .features-text p {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    line-height: 32px;
+    color: #fafffe; }
+
+/******************
+		S E C T I O N
+			F O U R
+    *******************/
+.program-location-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative; }
+  .program-location-container .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: -50px; }
+    .program-location-container .left img {
+      -webkit-box-shadow: 23px 23px 0px 3px #ffc600;
+      box-shadow: 23px 23px 0px 3px #ffc600; }
+  .program-location-container .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .program-location-container .right img {
+      -webkit-box-shadow: -23px 23px 0px 3px #ffc600;
+      box-shadow: -23px 23px 0px 3px #ffc600; }
+
+.left-text {
+  text-align: right;
+  margin-left: 20%;
+  margin-top: 30px; }
+  .left-text h2 {
+    font-family: 'Dokdo', cursive;
+    letter-spacing: 4.9px;
+    font-size: 45px;
+    line-height: 58px;
+    color: #ffc600;
+    margin-bottom: 25px; }
+  .left-text p {
+    text-align: left;
+    width: 90%;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    line-height: 32px;
+    color: #fafffe; }
+
+.right-text {
+  margin: 0 20% 10% 0; }
+  .right-text h2 {
+    font-family: 'Dokdo', cursive;
+    letter-spacing: 4.9px;
+    font-size: 45px;
+    line-height: 58px;
+    color: #ffc600; }
+  .right-text p {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    line-height: 32px;
+    color: #fafffe; }
+
+/******************
+		S E C T I O N
+			F I V E
+    *******************/
