@@ -183,8 +183,8 @@ header.blog {
     color: #ffc600;
     margin: 0 0 5% 20%; }
   .blog-main img {
-    -webkit-box-shadow: 18px 18px 0px 3px #555f02;
-    box-shadow: 18px 18px 0px 3px #555f02;
+    -webkit-box-shadow: 36px 34px 0px -15px #555f02;
+    box-shadow: 36px 34px 0px -15px #555f02;
     width: 97.7%; }
 
 .blog-main-text {
@@ -224,24 +224,39 @@ main {
     right: 0;
     width: 20%; }
     main .blog-right .blog-image {
-      text-align: right;
-      width: 105%;
-      position: relative;
+      position: absolute;
+      top: 15px;
       right: 0;
-      left: -5%; }
-    main .blog-right img {
-      -webkit-box-shadow: -11px 21px 0px 11px #555f02;
-      box-shadow: -11px 21px 0px 11px #555f02;
-      width: 94%; }
+      z-index: 2; }
 
 .blog-right-text {
   background-color: #555F02;
   width: 106%;
-  position: relative;
+  position: absolute;
+  top: 40px;
   left: -5.5%;
-  padding: 5%; }
+  padding: 390px 5% 5%;
+  z-index: 1; }
   .blog-right-text h5 {
-    margin: 0; }
+    margin: 0;
+    font-family: 'Dokdo', cursive;
+    letter-spacing: 1;
+    font-size: 30px;
+    line-height: 1;
+    color: #ffc600;
+    color: #fafffe; }
+  .blog-right-text p {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    line-height: 32px;
+    color: #fafffe;
+    font-size: 17px;
+    font-weight: 300; }
+  .blog-right-text ul li {
+    color: #FFc600; }
+    .blog-right-text ul li a {
+      color: #fafffe; }
 
 html {
   font-size: 125%; }
@@ -333,7 +348,8 @@ header.index {
   position: absolute;
   top: 34vh; }
   .header-main img {
-    width: 43%; }
+    width: 43%;
+    z-index: 4; }
 
 .header-title {
   width: 50%;

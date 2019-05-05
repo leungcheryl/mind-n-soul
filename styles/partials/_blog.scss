@@ -20,7 +20,7 @@ header.blog {
         margin: 0 0 5% 20%;
     }
     img {
-        box-shadow: 18px 18px 0px 3px rgba(85,95,2,1);
+        box-shadow: 36px 34px 0px -15px rgba(85,95,2,1);
         width: 97.7%;
     }
 }
@@ -55,15 +55,10 @@ main {
         right: 0;
         width: 20%;
         .blog-image {
-            text-align: right;
-            width: 105%;
-            position: relative;
+            position: absolute;
+            top: 15px;
             right: 0;
-            left: -5%;
-        }
-        img {
-            box-shadow: -11px 21px 0px 11px  rgba(85,95,2,1);
-            width: 94%;
+            z-index: 2;
         }
     }
 }
@@ -71,10 +66,27 @@ main {
 .blog-right-text {
     background-color: #555F02;
     width: 106%;
-    position: relative;
+    position: absolute;
+    top: 40px;
     left: -5.5%;
-    padding: 5%;
+    padding: 390px 5% 5%;
+    z-index: 1;
     h5 {
         margin: 0;
+        @include header(30px, 1, 1);
+        color: #fafffe;
+    }
+    p {
+        @include p-text;
+        font-size: 17px;
+        font-weight: 300;
+    }
+    ul li {
+        color: #FFc600;
+        a {
+            color:  #fafffe;
+        }
     }
 }
+
+

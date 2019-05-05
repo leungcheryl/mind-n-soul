@@ -105,6 +105,7 @@ header.index {
 	top: 34vh;
 	img {
 		width: 43%;
+		z-index: 4;
 	}
 }
 
@@ -234,6 +235,7 @@ header.index {
 		margin-top: -50px;
 		img {
 			box-shadow: 23px 23px 0px 3px rgba(255,198,0,1);
+			
 		}
 	}
 	.right {
