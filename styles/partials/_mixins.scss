@@ -6,6 +6,30 @@
     color: #ffc600;
 }
 
+@mixin header-h2 {
+    font-family: 'Dokdo', cursive;
+    letter-spacing: 10.9px;
+    font-size: 105px;
+    line-height: 69.6px;
+    color: #ffc600;
+}
+
+@mixin header-h3-big {
+    font-family: 'Dokdo', cursive;
+    letter-spacing: 4.9px;
+    font-size: 45px;
+    line-height: 58px;
+    color: #ffc600;
+}
+
+@mixin header-h3-small {
+    font-family: 'Dokdo', cursive;
+    letter-spacing: 4.3px;
+    font-size: 40px;
+    line-height: 58px;
+    color: #ffc600;
+}
+
 @mixin nav {
     font-family: 'Lato', sans-serif;
     font-weight: bold;
@@ -30,4 +54,13 @@
     padding: 1% 2%;
     background-color: #555f02;
     font-family: 'Dokdo', cursive;
+}
+
+@mixin placeholder {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    line-height: 32px;
+    letter-spacing: 2px;
+    color: #fafffe;
+    font-weight: light;
 }
