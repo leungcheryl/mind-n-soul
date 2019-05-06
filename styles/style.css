@@ -642,6 +642,84 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0);
   overflow: hidden; }
 
+header.contact {
+  background-image: url(../assets/contact-image-1.jpg);
+  height: 94vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #1e140e; }
+
+.contact-main {
+  overflow: hidden;
+  width: 80%;
+  padding: 0 5% 5% 0;
+  top: -300px;
+  position: relative;
+  left: -5%; }
+  .contact-main h2 {
+    font-family: 'Dokdo', cursive;
+    letter-spacing: 10.9px;
+    font-size: 105px;
+    line-height: 69.6px;
+    color: #ffc600;
+    margin: 0 0 5% 7%; }
+
+.contact-form {
+  background-color: #262725;
+  padding: 5%;
+  -webkit-box-shadow: 23px 23px 0px -6px #ffc600;
+  box-shadow: 23px 23px 0px -6px #ffc600; }
+  .contact-form .name,
+  .contact-form .email,
+  .contact-form .comment-text-area {
+    background-color: #262725; }
+  .contact-form input[type=submit] {
+    margin-bottom: 0; }
+
+.contact-socials {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  padding-left: 5%; }
+  .contact-socials .social-icons {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .contact-socials .social-icons i {
+      color: #ffc600;
+      -webkit-transition: 0.4s all ease;
+      -o-transition: 0.4s all ease;
+      transition: 0.4s all ease; }
+  .contact-socials p {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    line-height: 32px;
+    color: #fafffe; }
+  .contact-socials address {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+    line-height: 32px;
+    color: #fafffe;
+    font-style: normal; }
+
+i.fa-facebook-f:hover {
+  color: #3b5998; }
+
+i.fa-twitter:hover {
+  color: #00aced; }
+
+i.fa-whatsapp:hover {
+  color: #25D366; }
+
+i.fa-instagram:hover {
+  color: #8a3ab9; }
+
 html {
   font-size: 125%; }
 

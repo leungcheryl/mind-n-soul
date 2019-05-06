@@ -5,3 +5,79 @@
 @import "partials/_setup.scss";
 @import "partials/_variables.scss";
 @import "partials/_mixins.scss";
+
+header.contact {
+    background-image: url(../assets/contact-image-1.jpg);
+	height: 94vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-color: $camogreen;
+}
+
+
+.contact-main {
+    overflow: hidden;
+    width: 80%;
+    padding: 0 5% 5% 0;
+    top: -300px;
+    position: relative;
+    left: -5%;
+    h2 {
+        @include header-h2;
+        margin: 0 0 5% 7%;
+    }
+}
+
+.contact-form {
+    background-color: $charcoal;
+    padding: 5%;
+    box-shadow: 23px 23px 0px -6px $marigold;
+    .name,
+    .email,
+    .comment-text-area {
+        background-color: $charcoal;
+    }
+    input[type=submit] {
+        margin-bottom: 0;
+    }
+}
+
+.contact-socials {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    padding-left: 5%;
+    .social-icons {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        i {
+            color: $marigold;
+            transition: 0.4s all ease;
+        }
+    }
+    p {
+        @include p-text;
+    }
+    address {
+        @include p-text;
+        font-style: normal;
+    }
+}
+
+i.fa-facebook-f:hover {
+	color: #3b5998;
+}
+
+i.fa-twitter:hover {
+	color: #00aced;
+}
+
+i.fa-whatsapp:hover {
+	color: #25D366;
+}
+
+i.fa-instagram:hover {
+	color: #8a3ab9;
+}
+
