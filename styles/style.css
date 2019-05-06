@@ -325,8 +325,8 @@ header.blog {
   bottom: 0;
   left: 0; }
   .blog-main .blog-main-bg {
-    width: 100%;
-    height: 640px;
+    width: 90%;
+    height: 580px;
     background-color: #555f02;
     display: block;
     margin-top: 10%; }
@@ -339,7 +339,8 @@ header.blog {
     margin: 0 0 5% 20%; }
   .blog-main img {
     width: 98%;
-    position: absolute; }
+    -webkit-box-shadow: 23px 23px 0px -2px #555f02;
+    box-shadow: 23px 23px 0px -2px #555f02; }
 
 .blog-main-text {
   padding: 10% 5% 3% 20%;
@@ -490,7 +491,7 @@ input[type=submit] {
   background-color: #555f02;
   font-family: 'Dokdo', cursive;
   border: none;
-  margin-bottom: 15%; }
+  margin-bottom: 12%; }
 
 /****************************
         C O N T A C T  P A G E 
@@ -648,21 +649,24 @@ header.contact {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #1e140e; }
-
-.contact-main {
-  overflow: hidden;
-  width: 80%;
-  padding: 0 5% 5% 0;
-  top: -300px;
-  position: relative;
-  left: -5%; }
-  .contact-main h2 {
+  header.contact h2 {
     font-family: 'Dokdo', cursive;
     letter-spacing: 10.9px;
     font-size: 105px;
     line-height: 69.6px;
     color: #ffc600;
-    margin: 0 0 5% 7%; }
+    margin: 43vh 0 5% 0; }
+
+.container {
+  position: relative; }
+
+.contact-main {
+  overflow: hidden;
+  width: 80%;
+  padding: 0 5% 5% 0;
+  top: -200px;
+  position: absolute;
+  left: -5%; }
 
 .contact-form {
   background-color: #262725;
@@ -677,12 +681,15 @@ header.contact {
     margin-bottom: 0; }
 
 .contact-socials {
-  position: absolute;
-  top: 15%;
-  right: 10%;
-  padding-left: 5%; }
+  text-align: left;
+  padding: 7% 0 20%;
+  position: static;
+  width: 25%;
+  z-index: 5;
+  margin-left: auto;
+  margin-right: -5%; }
   .contact-socials .social-icons {
-    width: 50%;
+    width: 40%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -825,7 +832,7 @@ header.index {
     margin-top: 0;
     font-family: 'Dokdo', cursive;
     letter-spacing: 1;
-    font-size: 115px;
+    font-size: 105px;
     line-height: 0.65;
     color: #ffc600; }
     .header-title h1 span {
@@ -981,7 +988,7 @@ header.index {
 
 .left-text {
   text-align: right;
-  padding: 12% 0 12% 20%; }
+  padding: 12% 0 8% 20%; }
   .left-text h2 {
     font-family: 'Dokdo', cursive;
     letter-spacing: 4.9px;
@@ -1071,3 +1078,23 @@ footer {
     footer p a:hover {
       color: red;
       letter-spacing: 3px; }
+
+/******************
+		M E D I A
+		Q U E R I E S
+	*******************/
+@media (max-width: 1300px) {
+  header.index {
+    background-position: 60%; }
+  .header-main {
+    top: 40vh; }
+  .new-adventure-container .new-adventure-text {
+    width: 50%; }
+    .new-adventure-container .new-adventure-text p {
+      font-size: 17px; }
+  .new-adventure-container img {
+    width: 45%; }
+  .features p,
+  .program-location-container p,
+  .free-trials p {
+    font-size: 17px; } }

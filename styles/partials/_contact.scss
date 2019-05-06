@@ -12,26 +12,30 @@ header.contact {
 	background-size: cover;
 	background-repeat: no-repeat;
     background-color: $camogreen;
+    h2 {
+        @include header-h2;
+        margin: 43vh 0 5% 0;
+    }
 }
 
+.container {
+    position: relative;
+}
 
 .contact-main {
     overflow: hidden;
     width: 80%;
     padding: 0 5% 5% 0;
-    top: -300px;
-    position: relative;
+    top: -200px;
+    position: absolute;
     left: -5%;
-    h2 {
-        @include header-h2;
-        margin: 0 0 5% 7%;
-    }
 }
 
 .contact-form {
     background-color: $charcoal;
     padding: 5%;
     box-shadow: 23px 23px 0px -6px $marigold;
+
     .name,
     .email,
     .comment-text-area {
@@ -43,12 +47,17 @@ header.contact {
 }
 
 .contact-socials {
-    position: absolute;
-    top: 15%;
-    right: 10%;
-    padding-left: 5%;
+    text-align: left;
+    padding: 7% 0 20%;
+    position: static;
+    width: 25%;
+    z-index: 5;
+    margin-left: auto;
+    margin-right: -5%;
+    // padding-left: 5%;
+    
     .social-icons {
-        width: 50%;
+        width: 40%;
         display: flex;
         justify-content: space-between;
         i {

@@ -117,6 +117,7 @@ header.index {
 	height: 50%;
 	h1 {
 		margin-top: 0;
+		@include header(105px, 1, 0.65);
 		span {
 			padding-left: 15px;
 			font-family: 'Lato', sans-serif;
@@ -126,7 +127,6 @@ header.index {
 			font-weight: 400;
 			line-height: 0.5;
 		}
-		@include header(115px, 1, 0.65);
 	}
 }
     /******************
@@ -253,7 +253,7 @@ header.index {
 
 .left-text {
 	text-align: right;
-	padding: 12% 0 12% 20%;
+	padding: 12% 0 8% 20%;
 	h2 {
 		@include header-h3-big;
 		margin-bottom: 25px;
@@ -324,3 +324,36 @@ footer {
 		}
 	}
 }
+
+    /******************
+		M E D I A
+		Q U E R I E S
+	*******************/
+
+	@media (max-width: 1300px) {
+
+		header.index {
+			background-position: 60%;
+		}
+		.header-main {
+			top: 40vh;
+		}
+		.new-adventure-container {
+			.new-adventure-text {
+				width: 50%;
+				p {
+					font-size: 17px;
+				}
+			}
+			img {
+				width: 45%;
+			}
+		}
+
+		.features p,
+		.program-location-container p,
+		.free-trials p {
+			font-size: 17px;
+		}
+		
+	}
