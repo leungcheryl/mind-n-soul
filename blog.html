@@ -31,7 +31,7 @@
                     <nav>
                         <ul>
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="index.html#about">About</a></li>
                             <li><a href="blog.html">Blog</a></li>
                             <li><a href="contact.html">Contact</a>
                         </ul>
@@ -85,10 +85,15 @@
 
                     <div class="comment-form">
                         <form>
-                            <input type="text" class="name" name="name" required=
+                            <label for="name" class="visuallyHidden">Enter Full Name</label>
+                            <input type="text" class="name" id="name" name="name" required=
                             "true" placeholder="Name">
-                            <input type="email" class="email" name="email" required="true" placeholder="Email Address">
-                            <textarea name="comments" placeholder="Comment" class="comment-text-area" cols="30" rows="10"></textarea>
+
+                            <label for="email" class="visuallyHidden">Enter Email</label>
+                            <input type="email" class="email" id="email "name="email" required="true" placeholder="Email Address">
+
+                            <label for="comments" class="visuallyHidden">Enter Comments</label>
+                            <textarea name="comments" placeholder="Comment" id="comments" class="comment-text-area" cols="30" rows="10"></textarea>
                             <input type="submit" value="Post Comment">
                         </form>
                     </div>

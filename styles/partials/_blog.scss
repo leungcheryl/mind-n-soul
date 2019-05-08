@@ -1,33 +1,31 @@
-    /**************
-        B L O G 
-    ***************/
+    /********************
+        B L O G  P A G E
+    *********************/
 
 @import "partials/_setup.scss";
 @import "partials/_variables.scss";
 @import "partials/_mixins.scss";
 
-.blog-image-mobile {
-    display: none;
-}
+
+	/**  B L O G  H E A D E R  
+	S T Y L E S  **/ 
 
 header.blog {
     background-image: url(../assets/blog-image-1.jpg);
 	height: 75vh;
-	background-size: cover;
-	background-repeat: no-repeat;
-    background-color: $camogreen;	
     h2 {
         @include header-h2;
-        margin-top: 325px;
+        margin-top: 310px;
     }
 }
 
+
+	/**  B L O G  M A I N  
+	S E C T I O N  **/ 
+
 .blog-main {
-    position: relative;
+    @include position(relative, $top: -150px, $left: 0, $bottom: 0);
     width: 65%;
-    top: -150px;
-    bottom: 0;
-    left: 0;
     .blog-img {
         width: 100%;
         box-shadow: 23px 23px 0px -2px $mudgreen;
@@ -40,8 +38,7 @@ header.blog {
     border-right: 5px solid $mudgreen;
     border-bottom: 5px solid $mudgreen;
     margin-bottom: -15%;
-    position: relative;
-    left: 21px;
+    @include position(relative, $left: 21px);
     h3 {
         margin: 0;
         @include header-h3-small;
@@ -60,17 +57,17 @@ header.blog {
     }
 }
 
+
+	/**  A S I D E  B L O G 
+	S E C T I O N  **/ 
+
 main {
     position: relative;
     .blog-right {
-        position: absolute;
-        top: 110px;
-        right: 0;
+        @include position(absolute, $top: 110px, $right: 0);
         width: 22%;
         .blog-image {
-            position: absolute;
-            top: 15px;
-            right: 0;
+            @include position(absolute, $top: 15px, $right: 0);
             z-index: 2;
             width: 100%;
         }
@@ -80,9 +77,7 @@ main {
 .blog-right-text {
     background-color: $mudgreen;
     width: 106%;
-    position: absolute;
-    top: 40px;
-    left: -5.5%;
+    @include position(absolute, $top: 40px, $left: -5.5%);
     padding: 121% 5% 5%;
     z-index: 1;
     h5 {
@@ -104,6 +99,15 @@ main {
     }
 }
 
+.blog-right-text ul li a:hover {
+    font-style: italic;
+    letter-spacing: 3px;
+}
+
+
+	/**  C O M M E N T 
+    S E C T I O N  **/ 
+    
 .comment-section {
     width: 65%;
     h3 {
@@ -139,7 +143,9 @@ main {
 
 }
 
-
+	/**  C O M M E N T  F O R M
+    S E C T I O N  **/ 
+    
 input[type=text],
 input[type=email],
 .comment-text-area {
@@ -167,11 +173,22 @@ input[type=submit] {
     margin-bottom: 12%;
 }
 
+
+
+
+    /******************
+		M E D I A
+		Q U E R I E S
+	*******************/
+
+
+    /**  9 4 0  p x  **/ 
+    
 @media (max-width: 940px) {
 
     header.blog h2 {
         text-align: center;
-        margin-top: 120px;
+        margin-top: 105px;
     }
 
     .blog-main {
@@ -195,11 +212,11 @@ input[type=submit] {
     }
     .blog-right-text {
         padding: 5%;
-        border: 4px solid white;
+        border: 4px solid $iceblue;
         .blog-image-mobile {
             width: 35%;
             margin: 0 auto;
-            border: 4px solid white;
+            border: 4px solid $iceblue;
             margin-bottom: 10px;
             display: block;
             img {
@@ -214,6 +231,9 @@ input[type=submit] {
     }
 
 }
+
+
+    /**  7 6 8  p x  **/ 
 
 @media (max-width: 768px) {
 
@@ -240,6 +260,9 @@ input[type=submit] {
 
 }
 
+
+    /**  6 5 0 p x  **/ 
+    
 @media (max-width: 650px) {
     header.blog {
         height: 60vh;
