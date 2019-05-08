@@ -507,13 +507,13 @@ input[type=submit] {
 /**  9 4 0  p x  **/
 @media (max-width: 940px) {
   .blog-main {
-    top: 450px;
+    top: 250px;
     width: 95%; }
     .blog-main .heading h2 {
       text-align: center;
       padding-left: 0; }
   main .blog-right {
-    top: -300px;
+    top: -500px;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -561,7 +561,7 @@ input[type=submit] {
   header.blog {
     height: 60vh; }
   .blog-main {
-    top: -100px;
+    top: -275px;
     width: 95%; }
     .blog-main p {
       font-size: 17px; }
@@ -835,7 +835,8 @@ i.fa-instagram:hover {
       font-size: 80px;
       margin: 0 auto;
       width: 90%;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 10%; }
   .contact-socials {
     width: 100%;
     padding-top: 60%;
@@ -845,17 +846,8 @@ i.fa-instagram:hover {
       width: 20%;
       margin: 0 auto; } }
 
-/**  7 6 8 p x  **/
-@media (max-width: 768px) {
-  header.contact h2 {
-    width: 100%;
-    font-size: 75px; } }
-
 /**  6 0 0 p x  **/
 @media (max-width: 600px) {
-  header.contact h2 {
-    font-size: 65px;
-    margin-top: 20vh; }
   input[type=text],
   input[type=email] {
     width: 100%; }
@@ -873,6 +865,13 @@ i.fa-instagram:hover {
     .contact-socials .social-icons {
       padding: 4px;
       width: 50%; } }
+
+/**  5 0 0 p x  **/
+@media (max-width: 380px) {
+  header.content {
+    height: 60vh; }
+  .contact-socials {
+    padding-top: 130%; } }
 
 /******************
 		G E N E R A L

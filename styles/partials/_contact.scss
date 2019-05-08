@@ -127,8 +127,10 @@ i.fa-instagram:hover {
             margin: 0 auto;
             width: 90%;
             text-align: center;
+            margin-bottom: 10%;
         }
     }
+
     .contact-socials {
         width: 100%;
         padding-top: 60%;
@@ -141,26 +143,11 @@ i.fa-instagram:hover {
     }
 }
 
-    /**  7 6 8 p x  **/ 
-    
-@media (max-width: 768px) {
-    header.contact {
-        h2 {
-            width: 100%;
-            font-size: 75px;
-        }
-    }
-}
-
 
     /**  6 0 0 p x  **/ 
     
 @media (max-width: 600px) {
 
-    header.contact h2 {
-        font-size: 65px;
-        margin-top: 20vh;
-    }
 
     input[type=text],
     input[type=email] {
@@ -192,4 +179,18 @@ i.fa-instagram:hover {
         }
     }
 
+}
+
+
+    /**  5 0 0 p x  **/ 
+    
+@media (max-width: 380px) {
+
+    header.content {
+        height: 60vh;
+    }
+
+    .contact-socials {
+        padding-top: 130%;
+    }
 }

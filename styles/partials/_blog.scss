@@ -187,7 +187,7 @@ input[type=submit] {
 @media (max-width: 940px) {
 
     .blog-main {
-        top: 450px;
+        top: 250px;
         width: 95%;
         .heading h2 {
             text-align: center;
@@ -197,7 +197,7 @@ input[type=submit] {
 
     main {
         .blog-right {
-            top: -300px;
+            top: -500px;
             margin: 0 auto;
             left: 0;
             right: 0;
@@ -262,13 +262,12 @@ input[type=submit] {
     /**  6 5 0 p x  **/ 
 
 @media (max-width: 650px) {
-    
     header.blog {
         height: 60vh;
     }
 
     .blog-main {
-        top: -100px;
+        top: -275px;
         width: 95%;
         p {
             font-size: 17px;
