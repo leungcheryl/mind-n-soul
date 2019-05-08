@@ -866,6 +866,10 @@ i.fa-instagram:hover {
       padding: 4px;
       width: 50%; } }
 
+@media (max-width: 425px) {
+  .contact-socials {
+    padding-top: 120%; } }
+
 /**  5 0 0 p x  **/
 @media (max-width: 380px) {
   header.content {
