@@ -770,7 +770,7 @@ header.contact {
 	S E C T I O N  **/
 .contact-socials {
   text-align: left;
-  padding: 12% 0 22%;
+  padding: 12% 0 20%;
   width: 25%;
   z-index: 5;
   margin: 0 -7% 0 auto; }
@@ -1260,7 +1260,7 @@ footer {
 /**  1 3 0 0 p x  **/
 @media (max-width: 1300px) {
   header.index {
-    background-position: 65%;
+    background-position: 60%;
     height: 95vh; }
   .new-adventure-container .new-adventure-text {
     width: 50%; }
@@ -1276,9 +1276,10 @@ footer {
 /**  1 2 0 0 p x  **/
 @media (max-width: 1200px) {
   .header-main {
-    position: relative; }
-    .header-main img {
-      width: 50%; }
+    position: absolute;
+    top: 250px;
+    bottom: -40px;
+    left: 0; }
   .header-title h1 {
     font-size: 90px; }
     .header-title h1 span {
@@ -1334,7 +1335,7 @@ footer {
   .header-title {
     display: none; }
   .header-main {
-    top: 100px;
+    top: 125px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
