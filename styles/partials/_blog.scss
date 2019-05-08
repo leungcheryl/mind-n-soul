@@ -13,10 +13,6 @@
 header.blog {
     background-image: url(../assets/blog-image-1.jpg);
 	height: 75vh;
-    h2 {
-        @include header-h2;
-        margin-top: 310px;
-    }
 }
 
 
@@ -24,13 +20,17 @@ header.blog {
 	S E C T I O N  **/ 
 
 .blog-main {
-    @include position(relative, $top: -150px, $left: 0, $bottom: 0);
+    @include position(relative, $top: -250px, $left: 0, $bottom: 0);
     width: 65%;
+    .heading h2 {
+        @include header-h2;
+        padding: 0 0 5% 15%;
+        margin: 0;
+    }
     .blog-img {
         width: 100%;
         box-shadow: 23px 23px 0px -2px $mudgreen;
     }
-
 }
 
 .blog-main-text {
@@ -186,25 +186,23 @@ input[type=submit] {
     
 @media (max-width: 940px) {
 
-    header.blog h2 {
-        text-align: center;
-        margin-top: 105px;
-    }
-
     .blog-main {
-        top: 340px;
+        top: 450px;
         width: 95%;
+        .heading h2 {
+            text-align: center;
+            padding-left: 0;
+        }
     }
 
     main {
         .blog-right {
-            top: -400px;
+            top: -300px;
             margin: 0 auto;
             left: 0;
             right: 0;
             width: 60%;
             text-align: center;
-
             .blog-image {
                 display: none;
             }
@@ -262,13 +260,11 @@ input[type=submit] {
 
 
     /**  6 5 0 p x  **/ 
-    
+
 @media (max-width: 650px) {
+    
     header.blog {
         height: 60vh;
-        h2 {
-            margin-top: 230px;
-        }
     }
 
     .blog-main {

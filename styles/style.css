@@ -316,22 +316,23 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 header.blog {
   background-image: url(../assets/blog-image-1.jpg);
   height: 75vh; }
-  header.blog h2 {
-    font-family: 'Dokdo', cursive;
-    letter-spacing: 10.9px;
-    font-size: 105px;
-    line-height: 69.6px;
-    color: #ffc600;
-    margin-top: 310px; }
 
 /**  B L O G  M A I N  
 	S E C T I O N  **/
 .blog-main {
   position: relative;
-  top: -150px;
+  top: -250px;
   bottom: 0;
   left: 0;
   width: 65%; }
+  .blog-main .heading h2 {
+    font-family: 'Dokdo', cursive;
+    letter-spacing: 10.9px;
+    font-size: 105px;
+    line-height: 69.6px;
+    color: #ffc600;
+    padding: 0 0 5% 15%;
+    margin: 0; }
   .blog-main .blog-img {
     width: 100%;
     -webkit-box-shadow: 23px 23px 0px -2px #555f02;
@@ -505,14 +506,14 @@ input[type=submit] {
 	*******************/
 /**  9 4 0  p x  **/
 @media (max-width: 940px) {
-  header.blog h2 {
-    text-align: center;
-    margin-top: 105px; }
   .blog-main {
-    top: 340px;
+    top: 450px;
     width: 95%; }
+    .blog-main .heading h2 {
+      text-align: center;
+      padding-left: 0; }
   main .blog-right {
-    top: -400px;
+    top: -300px;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -559,8 +560,6 @@ input[type=submit] {
 @media (max-width: 650px) {
   header.blog {
     height: 60vh; }
-    header.blog h2 {
-      margin-top: 230px; }
   .blog-main {
     top: -100px;
     width: 95%; }
@@ -733,13 +732,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 header.contact {
   background-image: url(../assets/contact-image-1.jpg);
   height: 70vh; }
-  header.contact h2 {
-    font-family: 'Dokdo', cursive;
-    letter-spacing: 10.9px;
-    font-size: 105px;
-    line-height: 69.6px;
-    color: #ffc600;
-    margin-top: 225px; }
 
 /**  C O N T A C T  F O R M 
     S E C T I O N  **/
@@ -751,8 +743,16 @@ header.contact {
   width: 80%;
   padding: 0 3% 3% 0;
   position: absolute;
-  top: -200px;
+  top: -350px;
   left: -5%; }
+  .contact-main h2 {
+    font-family: 'Dokdo', cursive;
+    letter-spacing: 10.9px;
+    font-size: 105px;
+    line-height: 69.6px;
+    color: #ffc600;
+    padding-left: 5%;
+    margin-bottom: 5%; }
 
 .contact-form {
   background-color: #262725;
@@ -770,10 +770,10 @@ header.contact {
 	S E C T I O N  **/
 .contact-socials {
   text-align: left;
-  padding: 7% 0 17%;
+  padding: 12% 0 22%;
   width: 25%;
   z-index: 5;
-  margin: 0 -5% 0 auto; }
+  margin: 0 -7% 0 auto; }
   .contact-socials .social-icons {
     width: 40%;
     display: -webkit-box;
@@ -817,21 +817,25 @@ i.fa-instagram:hover {
 		M E D I A
 		Q U E R I E S
 	*******************/
-/**  9 4 0 p x  **/
-@media (max-width: 940px) {
+/**  1 2 0 0 p x  **/
+@media (max-width: 1200px) {
+  .contact-main h2 {
+    font-size: 80px; } }
+
+/**  9 7 0 p x  **/
+@media (max-width: 970px) {
   header.contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    header.contact h2 {
-      font-size: 80px;
-      margin: 0 auto;
-      width: 90%;
-      text-align: center;
-      margin-top: 200px; }
   .contact-main {
     width: 100%;
     left: 0; }
+    .contact-main h2 {
+      font-size: 80px;
+      margin: 0 auto;
+      width: 90%;
+      text-align: center; }
   .contact-socials {
     width: 100%;
     padding-top: 60%;
@@ -1456,8 +1460,8 @@ footer {
 /**  4 8 0 p x  **/
 @media (max-width: 480px) {
   header.index {
-    background-position: 95%;
-    height: 60vh; }
+    background-position: 85%;
+    height: 80vh; }
   .header-main {
     display: none; }
   .new-adventure {

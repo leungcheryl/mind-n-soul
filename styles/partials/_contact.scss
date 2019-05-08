@@ -14,10 +14,6 @@
 header.contact {
     background-image: url(../assets/contact-image-1.jpg);
 	height: 70vh;
-    h2 {
-        @include header-h2;
-        margin-top: 225px;
-    }
 }
 
 
@@ -32,7 +28,12 @@ header.contact {
     overflow: hidden;
     width: 80%;
     padding: 0 3% 3% 0;
-    @include position(absolute, $top: -200px, $left: -5%);
+    @include position(absolute, $top: -350px, $left: -5%);
+    h2 {
+        @include header-h2;
+        padding-left: 5%;
+        margin-bottom: 5%;
+    }
 }
 
 .contact-form {
@@ -55,10 +56,10 @@ header.contact {
 
 .contact-socials {
     text-align: left;
-    padding: 7% 0 17%;
+    padding: 12% 0 22%;
     width: 25%;
     z-index: 5;
-    margin: 0 -5% 0 auto;
+    margin: 0 -7% 0 auto;
     
     .social-icons {
         width: 40%;
@@ -101,25 +102,32 @@ i.fa-instagram:hover {
 		Q U E R I E S
 	*******************/
 
+    /**  1 2 0 0 p x  **/ 
+    
+@media (max-width: 1200px) {
 
-	/**  9 4 0 p x  **/ 
+    .contact-main h2 {
+        font-size: 80px;
+    }
+}
 
-@media (max-width: 940px) {
+	/**  9 7 0 p x  **/ 
+
+@media (max-width: 970px) {
 
     header.contact {
         display: flex;
-        h2 {
-            font-size: 80px;
-            margin: 0 auto;
-            width: 90%;
-            text-align: center;
-            margin-top: 200px;
-        }
     }
 
     .contact-main {
         width: 100%;
         left: 0;
+        h2 {
+            font-size: 80px;
+            margin: 0 auto;
+            width: 90%;
+            text-align: center;
+        }
     }
     .contact-socials {
         width: 100%;
