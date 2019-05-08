@@ -507,13 +507,13 @@ input[type=submit] {
 /**  9 4 0  p x  **/
 @media (max-width: 940px) {
   .blog-main {
-    top: 250px;
+    top: 375px;
     width: 95%; }
     .blog-main .heading h2 {
       text-align: center;
       padding-left: 0; }
   main .blog-right {
-    top: -500px;
+    top: -350px;
     margin: 0 auto;
     left: 0;
     right: 0;
@@ -839,7 +839,7 @@ i.fa-instagram:hover {
       margin-bottom: 10%; }
   .contact-socials {
     width: 100%;
-    padding-top: 60%;
+    padding-top: 70%;
     text-align: center;
     margin: 0; }
     .contact-socials .social-icons {
@@ -871,7 +871,7 @@ i.fa-instagram:hover {
   header.content {
     height: 60vh; }
   .contact-socials {
-    padding-top: 130%; } }
+    padding-top: 140%; } }
 
 /******************
 		G E N E R A L
