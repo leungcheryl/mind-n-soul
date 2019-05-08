@@ -6,34 +6,30 @@
 @import "partials/_variables.scss";
 @import "partials/_mixins.scss";
 
+.blog-image-mobile {
+    display: none;
+}
 
 header.blog {
     background-image: url(../assets/blog-image-1.jpg);
-	height: 94vh;
+	height: 75vh;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-color: $camogreen;	
+    background-color: $camogreen;	
+    h2 {
+        @include header-h2;
+        margin-top: 325px;
+    }
 }
 
 .blog-main {
     position: relative;
     width: 65%;
-    top: -300px;
+    top: -150px;
     bottom: 0;
     left: 0;
-    .blog-main-bg {
-        width: 90%;
-        height: 580px;
-        background-color: $mudgreen;
-        display: block;
-        margin-top: 10%;
-    }
-    h2 {
-        @include header-h2;
-        margin: 0 0 5% 20%;
-    }
-    img {
-        width: 98%;
+    .blog-img {
+        width: 100%;
         box-shadow: 23px 23px 0px -2px $mudgreen;
     }
 
@@ -41,9 +37,11 @@ header.blog {
 
 .blog-main-text {
     padding: 10% 5% 3% 20%;
-    border-right: 6px solid $mudgreen;
-    border-bottom: 6px solid $mudgreen;
-    margin-bottom: -27%;
+    border-right: 5px solid $mudgreen;
+    border-bottom: 5px solid $mudgreen;
+    margin-bottom: -15%;
+    position: relative;
+    left: 21px;
     h3 {
         margin: 0;
         @include header-h3-small;
@@ -108,7 +106,6 @@ main {
 
 .comment-section {
     width: 65%;
-    overflow: hidden;
     h3 {
         @include header-h3-big;
         color: $iceblue;
@@ -160,7 +157,7 @@ input[type=email],
 .comment-text-area {
     margin: 5% 0;
     width: 100%;
-    border: 2px solid $marigold;;
+    border: 2px solid $marigold;
 }
 
 input[type=submit] {
@@ -169,3 +166,104 @@ input[type=submit] {
     border: none;
     margin-bottom: 12%;
 }
+
+@media (max-width: 940px) {
+
+    header.blog h2 {
+        text-align: center;
+        margin-top: 120px;
+    }
+
+    .blog-main {
+        top: 340px;
+        width: 95%;
+    }
+
+    main {
+        .blog-right {
+            top: -400px;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            width: 60%;
+            text-align: center;
+
+            .blog-image {
+                display: none;
+            }
+        }
+    }
+    .blog-right-text {
+        padding: 5%;
+        border: 4px solid white;
+        .blog-image-mobile {
+            width: 35%;
+            margin: 0 auto;
+            border: 4px solid white;
+            margin-bottom: 10px;
+            display: block;
+            img {
+                display: block;
+            }
+        }
+    }
+
+    .comment-section {
+        width: 100%;
+        padding-top: 80%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .comment-section {
+        padding-top: 80%;
+        text-align: center;
+        .comments {
+            flex-direction: column;
+            .comment-pic.one,
+            .comment-pic.two {
+                width: 40%;
+                margin: 0 auto;
+                padding-bottom: 5%;
+            }
+            .comment-pic.two {
+                width: 35%;
+            }
+        }
+    }
+
+    .comment-text p {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    header.blog {
+        height: 60vh;
+        h2 {
+            margin-top: 230px;
+        }
+    }
+
+    .blog-main {
+        top: -100px;
+        width: 95%;
+        p {
+            font-size: 17px;
+        }
+    }
+
+    main {
+        .blog-right {
+            display: none;
+        }
+    }
+
+    .comment-section {
+        padding-top: 0;
+    }
+}
+

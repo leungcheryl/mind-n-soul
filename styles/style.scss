@@ -22,6 +22,11 @@ Mud Green: #555f02;
 @import "partials/_contact.scss";
 @import "partials/_variables.scss";
 
+    /******************
+		G E N E R A L
+		S T Y L E S  
+    *******************/
+
 html {
 	font-size: 125%;
 }
@@ -63,13 +68,31 @@ i.fa-bars {
 	display: none;
 }
 
+/***** SKIP LINKS *****/
+
+.skip-links {
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+   a {
+		position: absolute;
+		top: -2rem;
+		background-color: $camogreen;
+		color: $iceblue;
+		z-index: 999;
+		&:focus {
+			top:0;
+		}
+   }
+}
+
     /******************
         H E A D E R   
     *******************/
 
 header.index {
     background-image: url(../assets/home-image-1.jpg);
-	height: 94vh;
+	height: 90vh;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: $camogreen;
@@ -112,10 +135,13 @@ header.index {
 .header-main {
 	display: flex;
 	position: absolute;
-	top: 33vh;
+	bottom: -40px;
+	top: 300px;
+	left: 0;
 	img {
-		width: 43%;
+		width: 45%;
 		z-index: 4;
+		object-fit: contain;
 	}
 }
 
@@ -170,6 +196,7 @@ header.index {
 	height: 25%;
 	box-shadow: -23px 24px 0px -6px $mudgreen;
 }
+
 
     /******************
 		S E C T I O N
@@ -340,22 +367,20 @@ footer {
 /****** I N D E X  P A G E *****/
 
 @media (max-width: 1500px) {
+
 	header.index {
 		background-position: 50%;
     }
-	.header-main {
-        top: 42vh;
-    }
+
 }
+
 @media (max-width: 1300px) {
 
     header.index {
-		background-position: 60%;
-		height: 87vh;
+		background-position: 65%;
+		height: 95vh;
     }
-    .header-main {
-        top: 37vh;
-    }
+
     .new-adventure-container {
         .new-adventure-text {
             width: 50%;
@@ -377,13 +402,10 @@ footer {
 @media (max-width: 1200px) {
 
 
-
 	.header-main {
-		top: 35vh;
+		position: relative;
 		img {
 			width: 50%;
-			border: 5px solid white;
-			margin-top: -10%;
 		}
 	}
 	.header-title h1 {
@@ -435,7 +457,7 @@ footer {
 	}
 
 	.header-main {
-		top: 20vh;
+		top: 100px;
 		flex-direction: column;
 		width: 100%;
 		img {
